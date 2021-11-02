@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_referrals"
+        android:name="com.example.gamerregnum.Referrals"
+        android:label="@string/title_referrals"
+        tools:layout="@layout/fragment_referrals" />
+    <fragment
+        android:id="@+id/navigation_others"
+        android:name="com.example.gamerregnum.Others"
+        android:label="@string/title_others"
+        tools:layout="@layout/fragment_others" />
+    <fragment
+        android:id="@+id/navigation_rewards"
+        android:name="com.example.gamerregnum.Rewards"
+        android:label="@string/title_rewards"
+        tools:layout="@layout/fragment_rewards" />
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.gamerregnum.Home"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/navigation_tasks"
+        android:name="com.example.gamerregnum.Tasks"
+        android:label="@string/title_tasks"
+        tools:layout="@layout/fragment_tasks" />
+</navigation>

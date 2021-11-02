@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.gamerregnum">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/iconcolor"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/iconcolor"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Splash_Screen"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+
+        <service
+            android:name=".ServiceTimer5"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".ServiceTimer4"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".ServiceTimer3"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".ServiceTimer2"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".ServiceTimer"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".MyApps5"
+            android:label="My Favorite Apps"
+            android:parentActivityName=".Timer5" />
+        <activity
+            android:name=".MyApps4"
+            android:label="My Favorite Apps"
+            android:parentActivityName=".Timer4" />
+        <activity
+            android:name=".MyApps3"
+            android:label="My Favorite Apps"
+            android:parentActivityName=".Timer3" />
+        <activity
+            android:name=".MyApps2"
+            android:label="My Favorite Apps"
+            android:parentActivityName=".Timer2" />
+        <activity
+            android:name=".MyApps"
+            android:label="My Favorite Apps"
+            android:parentActivityName=".Timer1" />
+        <activity
+            android:name=".ExternalApps"
+            android:label="My Favorite Apps"
+            android:parentActivityName=".TipoAdd"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".TipoAdd"
+            android:label="My Favorite Apps"
+            android:parentActivityName=".MyFavoriteApps" />
+        <activity
+            android:name=".MyFavoriteApps"
+            android:label="My Favorite Apps"
+            android:parentActivityName=".PagePrimary" />
+        <activity android:name=".Settings" />
+        <activity android:name=".FAQ" />
+        <activity android:name=".Support" />
+        <activity android:name=".Legal" />
+        <activity
+            android:name=".Timer5"
+            android:label="Timer 5"
+            android:parentActivityName=".PagePrimary"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".Timer4"
+            android:label="Timer 4"
+            android:parentActivityName=".PagePrimary"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".Timer3"
+            android:label="Timer 3"
+            android:parentActivityName=".PagePrimary"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".Timer2"
+            android:label="Timer 2"
+            android:parentActivityName=".PagePrimary"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".Timer1"
+            android:label="Timer 1"
+            android:parentActivityName=".PagePrimary"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ListApps"
+            android:label="@string/Selec_App"
+            android:parentActivityName=".TipoAdd" />
+        <activity
+            android:name=".PagePrimary"
+            android:label="@string/title_activity_page_primary" />
+        <activity
+            android:name=".ForgetAccount"
+            android:label=""
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Signup"
+            android:label=""
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+    </application>
+
+</manifest>
